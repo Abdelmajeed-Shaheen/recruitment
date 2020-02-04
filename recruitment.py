@@ -1,5 +1,5 @@
 def main():
-	skills = ["Python","C++","Javascript","HTML","CSS","Asp.Net","Java"]
+	skills = ["Python", "C++", "JavaScript", "Meeting", "Leeting", "Eating"]
 	cv = {'name':'','age':'','expe':'','skills':[]}
 
 	name = input("What's your name?")
@@ -18,10 +18,10 @@ def main():
 	secskill = input("Choose another skill from above by entering its number:")
 	cv['skills'].append(skills[int(secskill)-1])
 
-	if (int(cv['age'])>25)and(int(cv['age'])<40)and(int(cv['expe'])>5)and(skills[6] in cv['skills']):
-		print ("You have been accepted,"+ cv['name'])
+	if (int(cv['age'])>=25)and(int(cv['age'])<=40)and(int(cv['expe'])>=5)and(skills[5] in cv['skills']):
+		print ("You have been accepted , "+ cv['name'])
 	else:
-		print ("You have been rejected,"+ cv['name'])
+		print ("You have been rejected , "+ cv['name'])
 
 
 
